@@ -1,32 +1,34 @@
-🌾 Crop Record Manager API
-A simple RESTful API built with Node.js, Express.js, and MongoDB (via Mongoose) to manage crop records.
-Supports:
-✅ Create new crop
-✅ View all crops
-✅ Delete a crop by ID
+A lightweight RESTful API developed using Node.js, Express.js, and MongoDB (with Mongoose) for managing crop records.
+
+Supported operations:
+✅ Add new crop record
+✅ Retrieve all crop records
+✅ Remove a crop by its ID
 
 🚀 Features
-Add a new crop record (POST /api/crops)
 
-View all crop records (GET /api/crops)
+Create a crop record: POST /api/crops
 
-Delete a crop record by ID (DELETE /api/crops/:id)
+Retrieve all crop records: GET /api/crops
 
-Each crop record has:
+Delete a crop record by ID: DELETE /api/crops/:id
 
-type → type of crop (e.g., Wheat, Rice)
+Each crop entry includes:
 
-yield → yield in units
+type – type of crop (e.g., Wheat, Rice)
 
-harvestDate → date of harvest
+yield – yield amount in units
+
+harvestDate – date the crop was harvested
 
 🧰 Tech Stack
+
 Node.js
 
 Express.js
 
-MongoDB with Mongoose
+MongoDB (with Mongoose)
 
-dotenv for managing environment variables
+dotenv for environment configuration
 
-Postman for testing
+Postman for API testing
